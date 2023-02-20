@@ -34,7 +34,7 @@
           <br><h4>Compartiendo nuestros conocimientos</h4>
 
           <a href="olvidastes.html">¿Olvidaste tu Contraseña</a><br>
-          <a href="registro.html">¿No tienes cuenta?</a> <br>
+          <a href="{{route('register')}}">¿No tienes cuenta?</a> <br>
        
 
 

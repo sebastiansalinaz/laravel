@@ -12,7 +12,7 @@
 
 
 <body>
-    <form id="form" class="form" action="/Register" method="POST">
+    <form id="form" class="form" action="{{route('registerPost')}}" method="POST">
 
         @csrf
 

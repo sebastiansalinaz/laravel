@@ -22,13 +22,13 @@ use Symfony\Component\Routing\Route as ComponentRoutingRoute;
 
 
 
-Route::get('/Register', [App\Http\Controllers\RegisterController::class, 'show']);
+Route::get('/Register', [RegisterController::class, 'show']);
 
-Route::post('/Register', [App\Http\Controllers\RegisterController::class, 'register']);
+Route::post('/Register', [RegisterController::class, 'register']);
 
-Route::get('/login', [App\Http\Controllers\LoginController::class, 'show']);
+Route::get('/login', [LoginController::class, 'show']);
 
-Route::post('/login', [App\Http\Controllers\LoginController::class, 'login']);
+Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
@@ -37,6 +37,9 @@ Route::get('/menu',[HomeController::class,'menu'])->name('menu');
 Route::get('/opiniones',[HomeController::class,'opiniones'])->name('opiniones');
 Route::get('/gost',[HomeController::class,'gost'])->name('productos');
 Route::get('/recetas',[HomeController::class,'recetas'])->name('recetas');
+Route::get('/Register', [RegisterController::class, 'show'])->name('register');
+Route::post('/Register', [RegisterController::class, 'showRegister'])->name('registerPost');
+
 
 
 
